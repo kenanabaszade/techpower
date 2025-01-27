@@ -1,0 +1,436 @@
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  src: url("./fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: italic;
+  src: url("./fonts/Montserrat-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: normal;
+  src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-style: normal;
+  src: url("./fonts/Montserrat-ExtraBold.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* Applies to Chrome, Safari, Edge, Opera */
+::-webkit-scrollbar {
+  width: 8px; /* makes the scrollbar thin */
+  height: 8px; /* horizontal scrollbar if needed */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* no track background or set a color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #91c2c2; /* darkish thumb */
+  border-radius: 8px;
+  border: 2px solid transparent; /* optional space around thumb */
+  background-clip: content-box; /* ensures border is transparent */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+  color: #000;
+  position: relative;
+  background-color: #fff;
+  transition: all 0.7s ease;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("/img/bgclippath.png") center/cover no-repeat;
+  z-index: -1;
+  transition: background-image 1s ease, background-position 1s ease;
+}
+
+.section-three .section-title {
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.section-three .stat-number {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.section-three .stat-desc {
+  font-size: 24px;
+  padding: 5px 10px;
+}
+
+body.bg-alt::after {
+  background-image: url("/img/clippath2.png");
+  background-position: center bottom;
+}
+
+body.bg-altthird::after {
+  background-image: url("/img/clippath3.png");
+  background-position: center bottom;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #000;
+  font-weight: 700;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #003869;
+}
+
+/* Toggle switch from your code */
+.toggle-switch {
+  display: inline-block;
+}
+.toggle-switch input {
+  display: none;
+}
+.toggle-switch label {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 30px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.toggle-switch label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 26px;
+  height: 23px;
+  background: #000;
+  border-radius: 50%;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  transition: left 0.3s ease;
+}
+.toggle-switch input:checked + label::after {
+  left: 32px;
+}
+
+.services-section {
+  position: relative;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+/* Card container */
+.service-card {
+  background: #fff;
+  border: 2px solid #2bbfaf; /* teal-like color for the border */
+  border-radius: 8px;
+  height: 354px; /* rounded corners */
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+/* Optional hover effect */
+.service-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon styling */
+.service-icon img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Title */
+.service-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000; /* or #333, etc. */
+}
+.service-desc {
+  color: #555;
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+.service-underline {
+  width: 40px;
+  opacity: 0;
+  height: 3px;
+  transition: all 0.5s;
+  background-color: #2bbfaf;
+  /*sametealcolorasborder*/
+  border-radius: 2px;
+  -webkit-transition: all 0;
+  -moz-transition: all 0;
+  -ms-transition: all 0;
+  -o-transition: all 0;
+}
+
+@media (max-width: 768px) {
+  .service-title {
+    font-size: 1.15rem;
+  }
+  .service-desc {
+    font-size: 0.9rem;
+  }
+}
+
+/* ********************DARK MODE STYLES APPLIES IN HERE ****************/
+
+.dark-mode {
+  background-color: #023d71;
+  color: #fff;
+}
+
+.dark-mode .navbar {
+  background-color: #222 !important;
+  border-bottom: none !important;
+}
+
+.dark-mode .navbar-light .navbar-nav .nav-link {
+  color: #fff !important;
+}
+.dark-mode .navbar-light .navbar-nav .nav-link:hover {
+  color: #ffd700 !important;
+}
+
+.dark-mode .xidmetlerbtn {
+  color: #fff;
+  border-color: #fff;
+}
+
+.dark-mode .toggle-switch label {
+  background: #333;
+  border-color: #fff;
+}
+
+.dark-mode .navbar {
+  background: linear-gradient(to bottom, #b5d4e3, #0e2f58);
+  background: linear-gradient(to bottom, #b5d4e3, 0%, #b5d4e3, 30%, #0e2f58 100%);
+  background: -webkit-linear-gradient(top, #b5d4e3, #0e2f58);
+  background: -o-linear-gradient(top, #b5d4e3, #0e2f58);
+  background: -moz-linear-gradient(top, #b5d4e3, #0e2f58);
+}
+.dark-mode .toggle-switch label::after {
+  background: #0e2f58;
+}
+
+.dark-mode .content-wrapper {
+  color: white;
+}
+
+.service-card:hover .service-underline {
+  opacity: 1;
+}
+.dark-mode .toggle-switch label {
+  background: transparent;
+  border-color: #0e2f58;
+}
+
+
+.dark-mode .footer-lines {
+  filter: invert(1);
+  -webkit-filter: invert(1);
+}
+
+.dark-mode .footer-logo {
+  filter: invert(1);
+  -webkit-filter: invert(1);
+}
+
+.dark-mode .footer-contact-link {
+  color: #fff;
+}
+
+.dark-mode .footer-content {
+  border-color: #fff;
+}
+.dark-mode .custom-footer{
+  background-color: #0e2f58;
+  color: #fff;
+}
+
+/* 3. HERO SECTION */
+.hero {
+  padding: 150px 0;
+  min-height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.hero-list {
+  list-style-type: disc;
+  padding-left: 1.6rem;
+  margin-bottom: 2rem;
+}
+.hero-list li {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+/* 4. BUTTONS */
+.btn-outline-dark {
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  border-width: 1px;
+}
+
+@media (max-width: 992px) {
+  .hero::after {
+    width: 100%;
+    opacity: 0.4;
+  }
+  .hero-list li {
+    font-size: 1.5rem;
+  }
+}
+
+/* SECTION 3 */
+
+.section-three {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 100vh;
+  padding-top: 200px;
+  background: url("/img/section3-wave-pattern.svg") no-repeat center center;
+  background-size: cover;
+  color: #000;
+}
+
+.content-wrapper {
+  text-align: center;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 55px;
+  font-weight: bold;
+  margin-bottom: 110px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.stat-desc {
+  font-size: 24px;
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+/* Footer container */
+.custom-footer {
+  width: 100%;
+  border-top: 1px solid #000; 
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+/* Flex container for the three regions */
+.footer-content {
+  display: flex;
+  border: 1px solid #000;
+  align-items: center;
+  max-width: 70%;
+  margin: 200px auto;
+  position: relative;
+  padding: 27px;
+}
+
+/* Left section: logo + copyright */
+.footer-left {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin-right: 230px;
+}
+.footer-logo {
+  height: 40px;
+  margin-right: 1rem;
+}
+.footer-copyright {
+  font-size: 0.9rem;
+  margin: 17px 0;
+}
+
+/* Middle section: Əlaqə + email */
+.footer-middle {
+  text-align: start;
+}
+.footer-contact-title {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  font-size: 18px;
+}
+.footer-contact-link {
+  text-decoration: none;
+  color: #000;
+  padding: 20px 0;
+  display: block;
+  font-size: 0.95rem;
+}
+
+.footer-lines {
+  height: 150px;
+  width: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
