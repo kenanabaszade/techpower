@@ -1,6 +1,7 @@
 // Get elements
 const themeToggle = document.getElementById("themeToggle");
 const logotechpover = document.getElementById("logotechpover");
+const favicon = document.getElementById("favicon");
 
 // Matches system dark mode
 const darkModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
@@ -13,10 +14,12 @@ if (storedTheme) {
   if (storedTheme === "dark") {
     document.body.classList.add("dark-mode");
     themeToggle.checked = true;
+    favicon.src = "./img/techpoverfavicon.svg";
     logotechpover.src = "./img/techpoverLightLogo.svg";
   } else {
     document.body.classList.remove("dark-mode");
     themeToggle.checked = false;
+    favicon.style.filter = "invert(0)";
     logotechpover.src = "./img/techpoverDarkLogo.svg";
   }
 } else {
@@ -32,7 +35,7 @@ function applySystemTheme(e) {
   if (e.matches) {
     // System is dark
     document.body.classList.add("dark-mode");
-    themeToggle.checked = true;
+    themeToggle.checked = true; 
     logotechpover.src = "./img/techpoverLightLogo.svg";
   } else {
     // System is light
@@ -48,11 +51,13 @@ themeToggle.addEventListener("change", function () {
     // User wants dark
     document.body.classList.add("dark-mode");
     logotechpover.src = "./img/techpoverLightLogo.svg";
+    favicon.src = "./img/techpoverfavicon.svg";
     localStorage.setItem("theme", "dark");
   } else {
     // User wants light
     document.body.classList.remove("dark-mode");
     logotechpover.src = "./img/techpoverDarkLogo.svg";
+    favicon.style.filter = "invert(0)";
     localStorage.setItem("theme", "light");
   }
 });
@@ -100,3 +105,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }, { threshold: 0.5 });
     sections.forEach(section => observer.observe(section));
 });
+
+
+ 
