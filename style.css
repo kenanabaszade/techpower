@@ -500,6 +500,17 @@ section {
     display: block;
     margin-right: 0;
   }
+
+  .navbarheader {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .leftcontactnav {
+    flex-direction: column;
+    
+  }
 }
 
 /* General Media Queries */
