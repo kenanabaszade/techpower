@@ -477,3 +477,40 @@ section {
     bottom: 0;
   }
 }
+
+@media (max-width: 768px) {
+  section {
+    height: 100%;
+  }
+  .section-three .section-title {
+    font-size: 18px;
+  }
+  .stats {
+    display: block;
+  }
+  .footer-content {
+    display: block;
+    max-width: 80%;
+  }
+  .footer-right {
+    display: none;
+  }
+
+  .footer-left {
+    display: block;
+    margin-right: 0;
+  }
+}
+
+/* General Media Queries */
+@media (max-width: 576px) {
+  .hero-list li {
+    font-size: 1rem;
+  }
+  .service-card {
+    padding: 1rem;
+  }
+  .service-title {
+    font-size: 0.9rem;
+  }
+}
