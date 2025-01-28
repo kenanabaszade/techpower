@@ -95,16 +95,45 @@ document.addEventListener("DOMContentLoaded", () => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          document.body.classList.remove("bg-alt", "bg-altthird");  // Add all background classes that need to be toggled
+          document.body.classList.remove("bg-alt", "bg-altthird");   
           const bgClass = entry.target.dataset.bgClass; 
           if (bgClass) {
             document.body.classList.add(bgClass);
           }
         }
       });
-    }, { threshold: 0.5 });
+    },  { threshold: [0.3, 0.6] });
     sections.forEach(section => observer.observe(section));
 });
 
 
- 
+let isScrolling;
+window.addEventListener('scroll', () => {
+  window.clearTimeout(isScrolling);
+  isScrolling = setTimeout(() => {
+    onScroll(); // Call your scroll function after user stops scrolling
+  }, 100);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const footerContent = document.querySelector(".footer-content");
+  const footerSection = document.querySelector("#footercontent");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          footerContent.classList.add("animate"); // Add the animation class
+        } else {
+          footerContent.classList.remove("animate"); // Remove the class when out of view
+        }
+      });
+    },
+    {
+      root: null, // Use the viewport as the root
+      threshold: 0.1, // Trigger when 10% of the footer is visible
+    }
+  );
+
+  observer.observe(footerSection);
+});

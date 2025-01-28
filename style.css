@@ -33,7 +33,7 @@
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+  scroll-padding-top: 0px;
 }
 
 /* Applies to Chrome, Safari, Edge, Opera */
@@ -222,13 +222,11 @@ section {
 
 /* ********************DARK MODE STYLES APPLIES IN HERE ****************/
 
-
-
 .dark-mode {
   background-color: #023d71;
   color: #fff;
 }
-.dark-mode .inner-footer{
+.dark-mode .inner-footer {
   background-color: #023d71;
   color: #fff;
 }
@@ -402,8 +400,15 @@ section {
   margin: 200px auto;
   position: relative;
   padding: 27px;
+  opacity: 0; /* Hidden initially */
+  transform: translateY(100px); /* Start off-screen */
+  transition: transform 1.5s ease, opacity 1.5s ease;
 }
 
+.footer-content.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
 /* Left section: logo + copyright */
 .footer-left {
   display: flex;
@@ -414,7 +419,7 @@ section {
 .footer-logo {
   height: 40px;
   margin-right: 1rem;
-} 
+}
 .footer-copyright {
   font-size: 0.9rem;
   margin: 17px 0;
