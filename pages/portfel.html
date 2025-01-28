@@ -87,7 +87,6 @@
         display: flex;
         align-items: center;
         padding: 20px;
-        background-color: #fff;
         position: relative;
       }
 
@@ -113,6 +112,31 @@
       .integration-subtitle {
         font-size: 26px;
         font-weight: 500;
+      }
+
+      .integrationbox-item {
+        display: flex;
+        background: white;
+        border: 1px solid #000;
+        height: 419px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .integrationbox-img {
+        border: 1px solid;
+        padding: 20px;
+        background: white;
+      }
+      .integrationbox-img img {
+        width: 100%;
+        height: 377px;
+        object-fit: cover;
+      }
+
+      .dark-mode .integrationbox-item {
+        color: #023d71;
       }
     </style>
   </head>
@@ -162,38 +186,38 @@
     <section style="padding-top: 50px">
       <div class="container mt-5">
         <div class="integration-box">
-          <div class="col-5" style="display: flex; background: white; border: 1px solid #000; height: 419px; align-items: center; justify-content: center; flex-direction: column">
+          <div class="col-5 integrationbox-item">
             <div class="integration-title">SİSTEM</div>
             <div class="integration-subtitle">İNTEQRASİYASI</div>
           </div>
-          <div class="col-8" style="border: 1px solid; padding: 20px; background: white">
+          <div class="col-8 integrationbox-img">
             <img src="../img/sisteminteqrasiya.png" style="width: 100%; height: 377px; object-fit: cover" alt="System Integration" />
           </div>
         </div>
 
         <div class="integration-box">
-          <div class="col-8" style="border: 1px solid; padding: 20px; background: white">
-            <img src="../img/ittehlukesizlik.png" style="width: 100%; height: 377px; object-fit: cover" alt="System Integration" />
+          <div class="col-8 integrationbox-img">
+            <img src="../img/ittehlukesizlik.png" alt="System Integration" />
           </div>
-          <div class="col-5" style="display: flex; background: white; border: 1px solid #000; height: 419px; align-items: center; justify-content: center; flex-direction: column">
+          <div class="col-5 integrationbox-item">
             <div class="integration-title">İT TƏHLÜKƏSİZLİK</div>
             <div class="integration-subtitle">HƏLLƏRİ</div>
           </div>
-        </div> 
+        </div>
 
         <div class="integration-box">
-          <div class="col-5" style="display: flex; border: 1px solid #000; height: 419px; align-items: center; justify-content: center; flex-direction: column">
+          <div class="col-5 integrationbox-item">
             <div class="integration-title">ŞƏBƏKƏ VƏ</div>
             <div class="integration-subtitle">SERVERLƏR</div>
           </div>
-          <div class="col-8" style="border: 1px solid; padding: 20px">
-            <img src="../img/sebeke.png" style="width: 100%; height: 377px; object-fit: cover" alt="System Integration" />
+          <div class="col-8 integrationbox-img">
+            <img src="../img/sebeke.png" alt="System Integration" />
           </div>
         </div>
       </div>
     </section>
     <!-- Footer -->
-    <div class="footer-content" id="footercontent" style="padding-left: 280px">
+    <div class="footer-content inner-footer" id="footercontent" style="padding-left: 280px">
       <div class="footer-left">
         <img src="/img/footerlogo.svg" alt="TechPower Logo" class="footer-logo" />
         <span class="footer-copyright"> © 2025 | Bütün hüquqlar qorunur </span>
