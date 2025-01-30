@@ -121,6 +121,8 @@ body.bg-altthird::after {
 /* Toggle switch from your code */
 .toggle-switch {
   display: inline-block;
+  margin-top: 5px;
+  margin-left: 5px;
 }
 .toggle-switch input {
   display: none;
@@ -725,10 +727,10 @@ section {
     margin: 0;
     padding: 0;
   }
-#navbarNav {
-  margin: 0 !important;
-  padding: 0 !important;
-}
+  #navbarNav {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 
   .integration-title {
     font-size: 8px;
@@ -748,10 +750,18 @@ section {
     display: block;
   }
   .section-three {
-    padding-top: 40px;
+    padding-top: 30px;
+    height: 88vh;
   }
   .xidmetler-container {
     padding-top: 0 !important;
+  }
+
+  .section-three .stat-number {
+    margin-bottom: 30px;
+  }
+  .stats {
+    width: 70%;
   }
 }
 
