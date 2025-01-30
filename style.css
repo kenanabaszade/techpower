@@ -750,13 +750,15 @@ section {
     display: block;
   }
   .section-three {
-    padding-top: 30px;
-    height: 75vh;
+    padding-top: 25px;
+    height: 85vh;
   }
   .xidmetler-container {
     padding-top: 0 !important;
   }
-
+  #portfelsection {
+    padding-top: 10px !important;
+  }
   .section-three .stat-number {
     margin-bottom: 30px;
   }
