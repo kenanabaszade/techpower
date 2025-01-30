@@ -259,10 +259,9 @@ section {
 .dark-mode .navbar {
   background: linear-gradient(to bottom, #a1b8cd, #023d71);
   background: linear-gradient(to bottom, #a1b8cd, 0%, #a1b8cd, 30%, #023d71 100%);
-  background: -webkit-linear-gradient(top, #a1b8cd, #023d71);;
+  background: -webkit-linear-gradient(top, #a1b8cd, #023d71);
   background: -o-linear-gradient(top, #a1b8cd, #023d71);
   background: -moz-linear-gradient(top, #a1b8cd, #023d71);
-  
 }
 .dark-mode .toggle-switch label::after {
   background: #0e2f58;
@@ -401,13 +400,13 @@ section {
   margin: 200px auto;
   position: relative;
   padding: 27px;
-  opacity: 0; 
+  opacity: 0;
   /* transform: translateY(100px);  */
   /* transition: transform 1.5s ease, opacity 1.5s ease; */
 }
 
 .dark-mode .section-title {
-  color:white;
+  color: white;
 }
 
 .footer-content.animate {
@@ -679,7 +678,6 @@ section {
 
 .dark-mode .ferqimizimages {
   filter: grayscale(1) brightness(1000%);
-
 }
 
 .integrationbox-item {
@@ -707,6 +705,7 @@ section {
   color: #023d71;
 }
 
+
 @media (max-width: 768px) {
   .inner-footer {
     padding: 61px !important;
@@ -721,14 +720,14 @@ section {
   }
 
   .integration-title {
-    font-size: 12px;
+    font-size: 8px;
   }
   .integration-subtitle {
     font-size: 12px;
   }
   .ferqimizimages {
-    width: 50px !important;
-    margin: 10px !important;
+    width: 50px ;
+    margin: 10px ;
   }
   .section-title {
     font-size: 24px;
@@ -743,13 +742,19 @@ section {
   .xidmetler-container {
     padding-top: 0 !important;
   }
-
-
 }
 
 
-
-.ferqimizimages { 
-  width: 200px;
-  margin: 60px;
+@media (min-width: 1080px) {
+  .ferqimizimages {
+    width: 140px ;
+    margin: 60px ;
+  }
+}
+@media (min-width: 1440px) {
+  .ferqimizimages {
+    width: 150px ;
+    margin: 83px ;
+  }
+  
 }
