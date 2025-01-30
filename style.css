@@ -405,6 +405,10 @@ section {
   /* transition: transform 1.5s ease, opacity 1.5s ease; */
 }
 
+.dark-mode .section-title {
+  color:white;
+}
+
 .footer-content.animate {
   opacity: 1;
   transform: translateY(0);
