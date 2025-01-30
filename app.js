@@ -137,3 +137,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
   observer.observe(footerSection);
 });
+
+
+
+function updateFooterImage() {
+  const footerImg = document.querySelector(".footer-lines");
+  
+  if (window.innerWidth <= 768) {
+    footerImg.src = "/img/footermobile.png"; 
+  } else {
+    footerImg.src = "/img/footershape.svg";  
+  }
+}
+
+// Run when the page loads
+updateFooterImage();
+
+// Run when window resizes
+window.addEventListener("resize", updateFooterImage);

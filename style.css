@@ -450,7 +450,7 @@ section {
 }
 
 .footer-lines {
-  height: 150px;
+  height: 140px;
   width: auto;
   position: absolute;
   top: 0;
@@ -505,10 +505,18 @@ section {
     display: block;
     max-width: 80%;
   }
-  .footer-right {
+  /* .footer-right {
     display: none;
+  } */
+  .footer-lines {
+    height: 196px;
+    /* padding: 18px; */
+    width: 83px;
+    width: 155px;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
-
   .footer-left {
     display: block;
     margin-right: 0;
