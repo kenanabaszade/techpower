@@ -400,9 +400,9 @@ section {
   margin: 200px auto;
   position: relative;
   padding: 27px;
-  opacity: 0; /* Hidden initially */
-  transform: translateY(100px); /* Start off-screen */
-  transition: transform 1.5s ease, opacity 1.5s ease;
+  opacity: 0; 
+  /* transform: translateY(100px);  */
+  /* transition: transform 1.5s ease, opacity 1.5s ease; */
 }
 
 .footer-content.animate {
@@ -458,7 +458,7 @@ section {
   color: #000;
 }
 
-.custom-footer::before {
+/* .custom-footer::before {
   content: "";
   position: absolute;
   bottom: -100%;
@@ -467,7 +467,7 @@ section {
   height: 100%;
   background-color: white;
   animation: slideUpBackground 1.5s ease-in-out forwards 0.5s;
-}
+} */
 
 @keyframes slideUpBackground {
   0% {
@@ -504,12 +504,10 @@ section {
   .navbarheader {
     display: flex;
     flex-direction: column;
-
   }
 
   .leftcontactnav {
     flex-direction: column;
-    
   }
 }
 
@@ -523,5 +521,199 @@ section {
   }
   .service-title {
     font-size: 0.9rem;
+  }
+}
+
+/* XIdmetler css */
+
+section {
+  height: 100%;
+  scroll-snap-align: none;
+}
+
+/* You can style each box, icons, etc. further in /style.css */
+.service-item {
+  border: 1px solid #000;
+  background-color: white;
+}
+.footer-content {
+  background-color: white;
+}
+.service-icon {
+  font-size: 2rem;
+}
+.service-header {
+  font-weight: 600;
+}
+
+.footer-content {
+  max-width: 100%;
+  opacity: 1 !important;
+  margin: 0;
+}
+
+.logo-item {
+  margin-right: 20px;
+}
+
+.col-1 {
+  width: 11.333333%;
+}
+.col-11 {
+  width: 86.666667%;
+}
+
+.service-item img {
+  width: 55px;
+}
+
+.dark-mode .xidmetler-container {
+  color: #000;
+}
+@media (max-width: 768px) {
+  .inner-footer {
+    padding: 61px !important;
+  }
+  .service-item img {
+    width: 31px !important;
+    margin: 0 !important;
+  }
+  .xidmetler-container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+/* Portfle */
+
+.service-item {
+  border: 1px solid #000;
+}
+.service-icon {
+  font-size: 2rem;
+}
+.service-header {
+  font-weight: 600;
+}
+
+.footer-content {
+  max-width: 100%;
+  margin: 0;
+}
+
+.logo-item {
+  margin-right: 20px;
+}
+
+.col-1 {
+  width: 11.333333%;
+}
+.col-11 {
+  width: 86.666667%;
+}
+
+.service-item img {
+  width: 55px;
+}
+.service {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.service img {
+  width: 100%;
+  height: auto;
+}
+
+.footer-content {
+  background-color: white;
+  opacity: 1;
+}
+
+.col {
+  padding: 10px;
+}
+
+.service-title {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.integration-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  position: relative;
+}
+
+.integration-content {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+.integration-image {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+.integration-image img {
+  max-width: 100%;
+  border: 1px solid #ddd;
+}
+.integration-title {
+  font-weight: bold;
+  font-size: 32px;
+}
+.integration-subtitle {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.integrationbox-item {
+  display: flex;
+  background: white;
+  border: 1px solid #000;
+  height: 419px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.integrationbox-img {
+  border: 1px solid;
+  padding: 20px;
+  background: white;
+}
+.integrationbox-img img {
+  width: 100%;
+  height: 377px;
+  object-fit: cover;
+}
+
+.dark-mode .integrationbox-item {
+  color: #023d71;
+}
+
+@media (max-width: 768px) {
+  .inner-footer {
+    padding: 61px !important;
+  }
+  .service-item img {
+    width: 31px !important;
+    margin: 0 !important;
+  }
+  .xidmetler-container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .integration-title {
+    font-size: 12px;
+  }
+  .integration-subtitle {
+    font-size: 12px;
   }
 }

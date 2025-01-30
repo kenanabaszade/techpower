@@ -27,10 +27,10 @@
     <section class="container-bgimg" id="hero" data-bg-class="">
       <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top navbarheader" style="border-bottom: 1px solid #000">
-          <div class="container justify-content-between ">
+          <div class="container justify-content-between">
             <!-- Logo -->
             <div class="d-flex align-items-center leftcontactnav">
-              <a class="navbar-brand d-flex align-items-center" href="#">
+              <a class="navbar-brand d-flex align-items-center pe-5" href="#">
                 <img src="/img/techpoverDarkLogo.svg" alt="TechPower Logo" id="logotechpover" height="40" />
               </a>
 
@@ -41,10 +41,10 @@
                     <a class="nav-link active" href="#">Əsas</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./pages/xidmetler.html">Xidmətlər</a>
+                    <a class="nav-link" href="#xidmetlersection">Xidmətlər</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./pages/portfel.html">Portfel</a>
+                    <a class="nav-link" href="#portfelsection">Portfel</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#footercontent">Əlaqə</a>
@@ -65,9 +65,84 @@
           </div>
         </nav>
       </header>
+      <section class="services-section" id="xidmetler" data-bg-class="bg-alt">
+        <div class="container mt-5 pt-5">
+          <div class="row pt-5 g-4">
+            <!-- Bootstrap’s gutter spacing -->
+            <!-- Card 1 -->
+            <div class="col-md-4">
+              <div class="service-card text-center p-4">
+                <!-- Icon (replace with your own .svg/.png) -->
+                <div class="service-icon mb-3">
+                  <img src="icons/systemintegration.svg" alt="Icon" height="60" />
+                </div>
+                <!-- Title -->
+                <h3 class="service-title mb-2">Sistem inteqrasiyası</h3>
+                <!-- Description -->
+                <p class="service-desc">Fərqli proqramlar və sistemlərin bir araya gətirilməsi. Sistemlər arasında məlumatların effektiv mübadiləsi.</p>
+                <!-- Decorative line (optional) -->
+                <div class="service-underline mx-auto mt-3"></div>
+              </div>
+            </div>
 
+            <!-- Card 2 -->
+            <div class="col-md-4">
+              <div class="service-card text-center p-4">
+                <div class="service-icon mb-3">
+                  <img src="icons/infrasuktur.svg" alt="Icon" height="60" />
+                </div>
+                <h3 class="service-title mb-2">İnfrastruktur idarəetməsi</h3>
+                <p class="service-desc">Fiziki və virtual İT resurslarının monitorinqi və idarə edilməsi.</p>
+                <div class="service-underline mx-auto mt-3"></div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+              <div class="service-card text-center p-4">
+                <div class="service-icon mb-3">
+                  <img src="icons/tehlukesizlik.svg" alt="Icon" height="60" />
+                </div>
+                <h3 class="service-title mb-2">Təhlükəsizlik sistemləri</h3>
+                <p class="service-desc">Şəbəkə təhlükəsizliyi, Məlumat şifralanması, Bulud təhlükəsizliyi, Antivirus və Firewall xidmətləri.</p>
+                <div class="service-underline mx-auto mt-3"></div>
+              </div>
+            </div>
+          </div>
+          <!-- row -->
+
+          <div class="row g-4 mt-4">
+            <!-- second row of three cards -->
+            <!-- Card 4 -->
+            <div class="col-md-4">
+              <div class="service-card text-center p-4">
+                <div class="service-icon mb-3">
+                  <img src="icons/sebeke.svg" alt="Icon" height="60" />
+                </div>
+                <h3 class="service-title mb-2">Şəbəkə həlləri</h3>
+                <p class="service-desc">Strukturlaşdırılmış kabel şəbəkələri, lokal şəbəkələr, korporativ şəbəkələr...</p>
+                <div class="service-underline mx-auto mt-3"></div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-4">
+              <div class="service-card text-center p-4">
+                <div class="service-icon mb-3">
+                  <img src="icons/proqramteminati.svg" alt="Icon" height="60" />
+                </div>
+                <h3 class="service-title mb-2">Proqram təminatı</h3>
+                <p class="service-desc">Billing sistemləri, Uçot sistemləri, Proqram inkişafı, QA test xidmətləri, Mobil tətbiq inkişafı...</p>
+                <div class="service-underline mx-auto mt-3"></div>
+              </div>
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- container -->
+      </section>
       <!-- Hero Section -->
-      <section class="hero position-relative overflow-hidden">
+      <!-- <section class="hero position-relative overflow-hidden">
         <div class="container">
           <div class="row">
             <div class="col-12 col-lg-6">
@@ -81,84 +156,7 @@
             </div>
           </div>
         </div>
-      </section>
-    </section>
-
-    <section class="services-section" id="xidmetler" data-bg-class="bg-alt">
-      <div class="container mt-5 pt-5">
-        <div class="row pt-5 g-4">
-          <!-- Bootstrap’s gutter spacing -->
-          <!-- Card 1 -->
-          <div class="col-md-4">
-            <div class="service-card text-center p-4">
-              <!-- Icon (replace with your own .svg/.png) -->
-              <div class="service-icon mb-3">
-                <img src="icons/systemintegration.svg" alt="Icon" height="60" />
-              </div>
-              <!-- Title -->
-              <h3 class="service-title mb-2">Sistem inteqrasiyası</h3>
-              <!-- Description -->
-              <p class="service-desc">Fərqli proqramlar və sistemlərin bir araya gətirilməsi. Sistemlər arasında məlumatların effektiv mübadiləsi.</p>
-              <!-- Decorative line (optional) -->
-              <div class="service-underline mx-auto mt-3"></div>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="col-md-4">
-            <div class="service-card text-center p-4">
-              <div class="service-icon mb-3">
-                <img src="icons/infrasuktur.svg" alt="Icon" height="60" />
-              </div>
-              <h3 class="service-title mb-2">İnfrastruktur idarəetməsi</h3>
-              <p class="service-desc">Fiziki və virtual İT resurslarının monitorinqi və idarə edilməsi.</p>
-              <div class="service-underline mx-auto mt-3"></div>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="col-md-4">
-            <div class="service-card text-center p-4">
-              <div class="service-icon mb-3">
-                <img src="icons/tehlukesizlik.svg" alt="Icon" height="60" />
-              </div>
-              <h3 class="service-title mb-2">Təhlükəsizlik sistemləri</h3>
-              <p class="service-desc">Şəbəkə təhlükəsizliyi, Məlumat şifralanması, Bulud təhlükəsizliyi, Antivirus və Firewall xidmətləri.</p>
-              <div class="service-underline mx-auto mt-3"></div>
-            </div>
-          </div>
-        </div>
-        <!-- row -->
-
-        <div class="row g-4 mt-4">
-          <!-- second row of three cards -->
-          <!-- Card 4 -->
-          <div class="col-md-4">
-            <div class="service-card text-center p-4">
-              <div class="service-icon mb-3">
-                <img src="icons/sebeke.svg" alt="Icon" height="60" />
-              </div>
-              <h3 class="service-title mb-2">Şəbəkə həlləri</h3>
-              <p class="service-desc">Strukturlaşdırılmış kabel şəbəkələri, lokal şəbəkələr, korporativ şəbəkələr...</p>
-              <div class="service-underline mx-auto mt-3"></div>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="col-md-4">
-            <div class="service-card text-center p-4">
-              <div class="service-icon mb-3">
-                <img src="icons/proqramteminati.svg" alt="Icon" height="60" />
-              </div>
-              <h3 class="service-title mb-2">Proqram təminatı</h3>
-              <p class="service-desc">Billing sistemləri, Uçot sistemləri, Proqram inkişafı, QA test xidmətləri, Mobil tətbiq inkişafı...</p>
-              <div class="service-underline mx-auto mt-3"></div>
-            </div>
-          </div>
-        </div>
-        <!-- row -->
-      </div>
-      <!-- container -->
+      </section> -->
     </section>
 
     <section class="section-three" data-bg-class="bg-altthird">
@@ -181,14 +179,208 @@
       </div>
     </section>
 
-    <section class="custom-footer" id="footercontent">
+    <!-- Services Section -->
+    <section class="container my-5 xidmetler-container" id="xidmetlersection" style="padding-top: 105px">
+      <div class="row mb-3">
+        <div class="service-item logo-item col-1 d-flex align-items-center justify-content-center">
+          <div class="col-auto">
+            <img src="../icons/db.svg" style="margin-left: 10px" alt="TechPower icon" />
+          </div>
+        </div>
+        <div class="row col-11 service-item align-items-center p-3">
+          <div class="col">
+            <h5 class="service-header mb-2">Şəbəkə və serverlərin qurulması</h5>
+            <p class="mb-0">Müxtəlif vendorların avadanlıqlarından (Cisco, IBM, HP, 3Com, Juniper, Alcatel və s.) istifadə edərək WLAN, WAN, VPN, İntranet və s. şəbəkələrin qurulması.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="service-item logo-item col-1 d-flex align-items-center justify-content-center">
+          <div class="col-auto">
+            <img src="../icons/airplay.svg" alt="TechPower icon" />
+          </div>
+        </div>
+        <div class="row col-11 service-item align-items-center p-3">
+          <div class="col">
+            <h5 class="service-header mb-2">Proqram təminatı</h5>
+            <p class="mb-0">Biling sistemləri, Uçot sistemləri, Proqram inkişafı, Sistem inteqrasiyası, QA test xidmətləri, Mobil tətbiq inkişafı və s.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="service-item logo-item col-1 d-flex align-items-center justify-content-center">
+          <div class="col-auto">
+            <img src="../icons/sebeke2.svg" alt="TechPower icon" />
+          </div>
+        </div>
+        <div class="row col-11 service-item align-items-center p-3">
+          <div class="col">
+            <h5 class="service-header mb-2">Şəbəkə həlləri</h5>
+            <p class="mb-0">Stukturlaşdırılmış kabel şəbəkələri, lokal şəbəkələr, korparativ şəbəkələr...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="service-item logo-item col-1 d-flex align-items-center justify-content-center">
+          <div class="col-auto">
+            <img src="../icons/lock.svg" style="width: 42px" alt="TechPower icon" />
+          </div>
+        </div>
+        <div class="row col-11 service-item align-items-center p-3">
+          <div class="col">
+            <h5 class="service-header mb-2">Təhlükəsizlik sistemləri</h5>
+            <p class="mb-0">Şəbəkə təhlükəsizliyi, Məlumat şifrələnməsi, Bulud təhlükəsizliyi, Təhlükəsizlik auditi, Antivirus və Firewall xidmətləri</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="service-item logo-item col-1 d-flex align-items-center justify-content-center">
+          <div class="col-auto">
+            <img src="../icons/db2.svg" alt="TechPower icon" />
+          </div>
+        </div>
+        <div class="row col-11 service-item align-items-center p-3">
+          <div class="col">
+            <h5 class="service-header mb-2">İnfrastruktur idarəetməsi</h5>
+            <p class="mb-0">Fiziki və virtual İT resurslarının monitorinqi və idarə edilməsi</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="service-item logo-item col-1 d-flex align-items-center justify-content-center">
+          <div class="col-auto">
+            <img src="../icons/cloudframe.svg" alt="TechPower icon" />
+          </div>
+        </div>
+        <div class="row col-11 service-item align-items-center p-3">
+          <div class="col">
+            <h5 class="service-header mb-2">Sistem inteqrasiyası</h5>
+            <p class="mb-0">Fərqli proqramlar və sistemlərin bir araya gətirilməsi. Sistemlər arasında məlumatların effektiv mübadiləsi.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="service-item logo-item col-1 d-flex align-items-center justify-content-center">
+          <div class="col-auto">
+            <img src="../icons/melumatanalitikasi.svg" alt="TechPower icon" />
+          </div>
+        </div>
+        <div class="row col-11 service-item align-items-center p-3">
+          <div class="col">
+            <h5 class="service-header mb-2">Məlumat analitikası</h5>
+            <p class="mb-0">Böyük məlumatların analizi və qərar qəbulu üçün informasiya çıxarılması.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="service-item logo-item col-1 d-flex align-items-center justify-content-center">
+          <div class="col-auto">
+            <img src="../icons/cloudcalculation.svg" alt="TechPower icon" />
+          </div>
+        </div>
+        <div class="row col-11 service-item align-items-center p-3">
+          <div class="col">
+            <h5 class="service-header mb-2">Bulud Hesablama Xidmətləri</h5>
+            <p class="mb-0">Məlumatların buludda saxlanması və işlənməsi.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="service-item logo-item col-1 d-flex align-items-center justify-content-center">
+          <div class="col-auto">
+            <img src="../icons/yanginsiqnalizasiya.svg" alt="TechPower icon" />
+          </div>
+        </div>
+        <div class="row col-11 service-item align-items-center p-3">
+          <div class="col">
+            <h5 class="service-header mb-2">Yanğın siqnalizasiya sistemləri</h5>
+            <p class="mb-0">Biznes mərkəzlərinə, yaşayış binalarına yanğın təhlükəsizlik sistemlərinin (detektorlar, "controller"lər, "button"lar və s.) qurulması.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="service-item logo-item col-1 d-flex align-items-center justify-content-center">
+          <div class="col-auto">
+            <img src="../icons/kameranezaret.svg" alt="TechPower icon" />
+          </div>
+        </div>
+        <div class="row col-11 service-item align-items-center p-3">
+          <div class="col">
+            <h5 class="service-header mb-2">Kamera nəzarət sistemləri</h5>
+            <p class="mb-0">Hər növ təhlükəsizlik kameralarının (analoq, "ip", "wireless", idarə oluna bilən, gizli və s.) qurulması.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section style="padding-top: 50px" id="portfelsection">
+      <div class="container mt-5">
+        <div class="integration-box">
+          <div class="col-5 integrationbox-item">
+            <div class="integration-title">SİSTEM</div>
+            <div class="integration-subtitle">İNTEQRASİYASI</div>
+          </div>
+          <div class="col-8 integrationbox-img">
+            <img src="../img/sisteminteqrasiya.png" style="width: 100%; height: 377px; object-fit: cover" alt="System Integration" />
+          </div>
+        </div>
+
+        <div class="integration-box">
+          <div class="col-8 integrationbox-img">
+            <img src="../img/ittehlukesizlik.png" alt="System Integration" />
+          </div>
+          <div class="col-5 integrationbox-item">
+            <div class="integration-title">İT TƏHLÜKƏSİZLİK</div>
+            <div class="integration-subtitle">HƏLLƏRİ</div>
+          </div>
+        </div>
+
+        <div class="integration-box">
+          <div class="col-5 integrationbox-item">
+            <div class="integration-title">ŞƏBƏKƏ VƏ</div>
+            <div class="integration-subtitle">SERVERLƏR</div>
+          </div>
+          <div class="col-8 integrationbox-img">
+            <img src="../img/sebeke.png" alt="System Integration" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer-content inner-footer" id="footercontent" style="padding-left: 280px">
+      <div class="footer-left">
+        <img src="/img/footerlogo.svg" alt="TechPower Logo" class="footer-logo" />
+        <span class="footer-copyright"> © 2025 | Bütün hüquqlar qorunur </span>
+      </div>
+
+      <!-- Middle: “Əlaqə” + Email -->
+      <div class="footer-middle">
+        <span class="footer-contact-title">Əlaqə</span>
+        <a href="mailto:info@techpower.az" class="footer-contact-link">info@techpower.az</a>
+      </div>
+
+      <div class="footer-right">
+        <img src="/img/footershape.svg" alt="Footer Lines" class="footer-lines" />
+      </div>
+    </div>
+    <!-- <section class="custom-footer" id="footercontent">
       <div class="footer-content">
         <div class="footer-left">
           <img src="/img/footerlogo.svg" alt="TechPower Logo" class="footer-logo" />
           <span class="footer-copyright"> © 2025 | Bütün hüquqlar qorunur </span>
         </div>
-
-        <!-- Middle: “Əlaqə” + Email -->
+ 
         <div class="footer-middle">
           <span class="footer-contact-title">Əlaqə</span>
           <a href="mailto:info@techpower.az" class="footer-contact-link"> info@techpower.az </a>
@@ -198,7 +390,7 @@
           <img src="/img/footervector.png" alt="Footer Lines" class="footer-lines" />
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Optional JavaScript files (Bootstrap, Fancybox, etc.) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
