@@ -705,7 +705,6 @@ section {
   color: #023d71;
 }
 
-
 @media (max-width: 768px) {
   .inner-footer {
     padding: 61px !important;
@@ -718,6 +717,18 @@ section {
     padding-right: 20px;
     padding-left: 20px;
   }
+  #logotechpover {
+    width: 90px;
+  }
+  .leftcontactnav {
+    align-items: start !important;
+    margin: 0;
+    padding: 0;
+  }
+#navbarNav {
+  margin: 0 !important;
+  padding: 0 !important;
+}
 
   .integration-title {
     font-size: 8px;
@@ -726,8 +737,8 @@ section {
     font-size: 12px;
   }
   .ferqimizimages {
-    width: 50px ;
-    margin: 10px ;
+    width: 50px;
+    margin: 10px;
   }
   .section-title {
     font-size: 24px;
@@ -744,17 +755,16 @@ section {
   }
 }
 
-
 @media (min-width: 1080px) {
   .ferqimizimages {
-    width: 140px ;
-    margin: 60px ;
+    width: 140px;
+    margin: 60px;
   }
 }
+
 @media (min-width: 1440px) {
   .ferqimizimages {
-    width: 150px ;
-    margin: 83px ;
+    width: 150px;
+    margin: 83px;
   }
-  
 }
